@@ -1,0 +1,10 @@
+name: tarea7.yml
+on: [push]
+
+jobs:
+  buid-node:
+    runs-on: ubuntu-latest
+    container: mongo
+    steps:
+      - run: echo "Running inside Container"
+      - run: docker exec -it mongosh
