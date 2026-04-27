@@ -7,4 +7,4 @@ jobs:
     container: mongo
     steps:
       - run: echo "Running inside Container"
-      - run: docker exec -it mongosh
+      - run: mongosh
