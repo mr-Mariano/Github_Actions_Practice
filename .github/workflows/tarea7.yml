@@ -7,4 +7,5 @@ jobs:
     container: mongo
     steps:
       - run: echo "Running inside Container"
-      - run: mongosh
+      - run: |
+          mongosh --eval "db.runCommand({ ping: 1 })"
